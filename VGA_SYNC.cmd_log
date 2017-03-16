@@ -1,0 +1,2 @@
+vhdtdtfi -lib work VGA_SYNC.vhd -prj Sokoban_version1 -o VGA_SYNC.spl -module VGA_SYNC -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e VGA_SYNC.spl C:/Users/David/Sokoban_version1/VGA_SYNC.sym 

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\David\Sokoban_version1\Eingabe.ncd
+OUTFILE=C:\Users\David\Sokoban_version1\Eingabe.bit
+FAMILY=Spartan-3A DSP
+PART=xc3sd1800a-4fg676
+WORKINGDIR=C:\Users\David\Sokoban_version1
+LICENSE=WebPack
+USER_INFO=211316171_0_0_052

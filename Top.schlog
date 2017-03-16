@@ -1,0 +1,5 @@
+select figure at 1829 743 8 -branches -sn=1
+select figure at 880 778 8 -branches -sn=1
+move iomarker at 928 784 to 928 752 R180 -keepConn -sn=1
+select figure at 858 622 8 -branches -sn=1
+select figure at 2202 827 8 -branches -sn=1

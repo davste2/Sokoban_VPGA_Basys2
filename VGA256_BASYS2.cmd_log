@@ -1,0 +1,2 @@
+vhdtdtfi -lib work VGA_SYNC.vhd -lib work FARBEN.vhd -lib work VGA256_BASYS2.vhd -prj Sokoban_version1 -o VGA256_BASYS2.spl -module VGA256_BASYS2 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e VGA256_BASYS2.spl C:/Users/David/Sokoban_version1/VGA256_BASYS2.sym 

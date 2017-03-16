@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/David/Sokoban_version1/Top_Top_sch_tb_isim_beh.exe" -prj "C:/Users/David/Sokoban_version1/Top_Top_sch_tb_beh.prj" "work.Top_Top_sch_tb" 
