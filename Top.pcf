@@ -1,0 +1,31 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Mar 16 12:32:04 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Latch" LOCATE = SITE "B7" LEVEL 1;
+COMP "RGB<0>" LOCATE = SITE "H13" LEVEL 1;
+COMP "RGB<1>" LOCATE = SITE "J13" LEVEL 1;
+COMP "RGB<2>" LOCATE = SITE "F14" LEVEL 1;
+COMP "RGB<3>" LOCATE = SITE "C14" LEVEL 1;
+COMP "RGB<4>" LOCATE = SITE "G13" LEVEL 1;
+COMP "Data" LOCATE = SITE "B6" LEVEL 1;
+COMP "RGB<5>" LOCATE = SITE "D13" LEVEL 1;
+COMP "buttons<0>" LOCATE = SITE "M5" LEVEL 1;
+COMP "RGB<6>" LOCATE = SITE "G14" LEVEL 1;
+COMP "buttons<1>" LOCATE = SITE "M11" LEVEL 1;
+COMP "RGB<7>" LOCATE = SITE "F13" LEVEL 1;
+COMP "buttons<2>" LOCATE = SITE "P7" LEVEL 1;
+COMP "buttons<3>" LOCATE = SITE "P6" LEVEL 1;
+COMP "buttons<4>" LOCATE = SITE "N5" LEVEL 1;
+COMP "buttons<5>" LOCATE = SITE "N4" LEVEL 1;
+COMP "buttons<6>" LOCATE = SITE "P4" LEVEL 1;
+COMP "buttons<7>" LOCATE = SITE "G1" LEVEL 1;
+COMP "Reset" LOCATE = SITE "G12" LEVEL 1;
+COMP "HSYNC" LOCATE = SITE "J14" LEVEL 1;
+COMP "mclk" LOCATE = SITE "M6" LEVEL 1;
+COMP "Clk_cont" LOCATE = SITE "C5" LEVEL 1;
+COMP "VSYNC" LOCATE = SITE "K13" LEVEL 1;
+NET "mclk_BUFGP/IBUFG" BEL "mclk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

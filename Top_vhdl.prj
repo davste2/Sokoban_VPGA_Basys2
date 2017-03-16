@@ -1,0 +1,6 @@
+vhdl work "C:\Users\David\Sokoban_version1\VGA_SYNC.vhd"
+vhdl work "C:\Users\David\Sokoban_version1\Taktteiler.vhd"
+vhdl work "C:\Users\David\Sokoban_version1\farb_tackt.vhd"
+vhdl work "C:\Users\David\Sokoban_version1\FARBEN.vhd"
+vhdl work "C:\Users\David\Sokoban_version1\Eingabe.vhd"
+vhdl work "C:\Users\David\Sokoban_version1\Top.vhf"

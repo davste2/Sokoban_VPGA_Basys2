@@ -127,9 +127,8 @@
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
         <branch name="Data">
-            <wire x2="944" y1="784" y2="784" x1="928" />
-            <wire x2="992" y1="752" y2="752" x1="944" />
-            <wire x2="944" y1="752" y2="784" x1="944" />
+            <wire x2="976" y1="752" y2="752" x1="928" />
+            <wire x2="992" y1="752" y2="752" x1="976" />
         </branch>
         <branch name="Clk_cont">
             <wire x2="1392" y1="752" y2="752" x1="1376" />
@@ -143,7 +142,6 @@
             <wire x2="1408" y1="848" y2="848" x1="1392" />
         </branch>
         <iomarker fontsize="28" x="1408" y="848" name="Latch" orien="R0" />
-        <iomarker fontsize="28" x="928" y="784" name="Data" orien="R180" />
         <branch name="Reset">
             <wire x2="688" y1="1440" y2="1440" x1="608" />
         </branch>
@@ -221,5 +219,6 @@
             <wire x2="1472" y1="944" y2="944" x1="1392" />
         </branch>
         <iomarker fontsize="28" x="1472" y="944" name="buttons(7:0)" orien="R0" />
+        <iomarker fontsize="28" x="928" y="752" name="Data" orien="R180" />
     </sheet>
 </drawing>

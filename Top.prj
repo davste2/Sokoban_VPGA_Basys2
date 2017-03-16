@@ -1,0 +1,6 @@
+vhdl work "VGA_SYNC.vhd"
+vhdl work "Taktteiler.vhd"
+vhdl work "farb_tackt.vhd"
+vhdl work "FARBEN.vhd"
+vhdl work "Eingabe.vhd"
+vhdl work "Top.vhf"
