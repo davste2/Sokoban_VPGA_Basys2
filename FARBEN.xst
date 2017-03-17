@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/David/Sokoban_version1/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/David/Sokoban_version1/xst"
+elaborate
+-ifn FARBEN.prj
+-ifmt mixed

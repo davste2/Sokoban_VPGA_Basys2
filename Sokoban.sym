@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="Sokoban">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2017-3-6T17:34:21</timestamp>
+    <timestamp>2017-3-16T22:12:11</timestamp>
     <pin polarity="Input" x="0" y="-32" name="buttons(7:0)" />
     <pin polarity="Output" x="384" y="-32" name="field(1:0)" />
     <graph>

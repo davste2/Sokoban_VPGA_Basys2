@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-MEINPC::  Thu Mar 16 12:32:07 2017
+MEINPC::  Fri Mar 17 00:16:29 2017
 
 par -w -intstyle ise -ol high -t 1 Top_map.ncd Top.ncd Top.pcf 
 
@@ -42,7 +42,7 @@ Design Summary Report:
 
 
    Number of BUFGMUXs                        1 out of 24      4%
-   Number of Slices                         75 out of 960     7%
+   Number of Slices                        219 out of 960    22%
       Number of SLICEMs                      0 out of 480     0%
 
 
@@ -61,40 +61,43 @@ Total REAL time at the beginning of Placer: 1 secs
 Total CPU  time at the beginning of Placer: 1 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:2e3080fe) REAL time: 1 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:366b4fb) REAL time: 1 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:2e3080fe) REAL time: 1 secs 
+Phase 2.7  Design Feasibility Check (Checksum:366b4fb) REAL time: 1 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:2e3080fe) REAL time: 1 secs 
+Phase 3.31  Local Placement Optimization (Checksum:366b4fb) REAL time: 1 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:2f7c5cd5) REAL time: 1 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:7ea7daa) REAL time: 1 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:2f7c5cd5) REAL time: 1 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:7ea7daa) REAL time: 1 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:2f7c5cd5) REAL time: 1 secs 
+Phase 6.36  Local Placement Optimization (Checksum:7ea7daa) REAL time: 1 secs 
 
 Phase 7.8  Global Placement
-...
-..
-Phase 7.8  Global Placement (Checksum:b99016ad) REAL time: 3 secs 
+.............................................
+...................
+...............................................
+................................................................
+..................................................................................
+Phase 7.8  Global Placement (Checksum:c193a81c) REAL time: 2 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:b99016ad) REAL time: 3 secs 
+Phase 8.5  Local Placement Optimization (Checksum:c193a81c) REAL time: 2 secs 
 
 Phase 9.18  Placement Optimization
-Phase 9.18  Placement Optimization (Checksum:bc1948e0) REAL time: 3 secs 
+Phase 9.18  Placement Optimization (Checksum:e8bb8430) REAL time: 3 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:bc1948e0) REAL time: 3 secs 
+Phase 10.5  Local Placement Optimization (Checksum:e8bb8430) REAL time: 3 secs 
 
 Total REAL time to Placer completion: 3 secs 
-Total CPU  time to Placer completion: 2 secs 
+Total CPU  time to Placer completion: 3 secs 
 Writing design to file Top.ncd
 
 
@@ -102,13 +105,13 @@ Writing design to file Top.ncd
 Starting Router
 
 
-Phase  1  : 442 unrouted;      REAL time: 4 secs 
+Phase  1  : 1445 unrouted;      REAL time: 4 secs 
 
-Phase  2  : 391 unrouted;      REAL time: 4 secs 
+Phase  2  : 1385 unrouted;      REAL time: 4 secs 
 
-Phase  3  : 61 unrouted;      REAL time: 4 secs 
+Phase  3  : 302 unrouted;      REAL time: 4 secs 
 
-Phase  4  : 84 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  4  : 349 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
 Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
@@ -116,24 +119,22 @@ Updating file: Top.ncd with current fully routed design.
 
 Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
 
-Updating file: Top.ncd with current fully routed design.
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 
-Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
-
-Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
 WARNING:Route:455 - CLK Net:Taktteiler1/led_int may have excessive skew because 
-      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+      3 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
 
-Total REAL time to Router completion: 5 secs 
-Total CPU time to Router completion: 5 secs 
+Total REAL time to Router completion: 13 secs 
+Total CPU time to Router completion: 13 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -151,9 +152,9 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|          mclk_BUFGP |  BUFGMUX_X2Y1| No   |   36 |  0.027     |  0.063      |
+|          mclk_BUFGP |  BUFGMUX_X2Y1| No   |   48 |  0.017     |  0.052      |
 +---------------------+--------------+------+------+------------+-------------+
-| Taktteiler1/led_int |         Local|      |   15 |  0.140     |  1.737      |
+| Taktteiler1/led_int |         Local|      |   15 |  0.759     |  2.077      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -173,11 +174,11 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net mcl | SETUP       |         N/A|     4.449ns|     N/A|           0
-  k_BUFGP                                   | HOLD        |     0.959ns|            |       0|           0
+  Autotimespec constraint for clock net mcl | SETUP       |         N/A|    10.725ns|     N/A|           0
+  k_BUFGP                                   | HOLD        |     0.892ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net Tak | SETUP       |         N/A|     4.091ns|     N/A|           0
-  tteiler1/led_int                          | HOLD        |     0.964ns|            |       0|           0
+  Autotimespec constraint for clock net Tak | SETUP       |         N/A|     4.010ns|     N/A|           0
+  tteiler1/led_int                          | HOLD        |     1.159ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -193,8 +194,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 6 secs 
-Total CPU time to PAR completion: 5 secs 
+Total REAL time to PAR completion: 13 secs 
+Total CPU time to PAR completion: 13 secs 
 
 Peak Memory Usage:  291 MB
 

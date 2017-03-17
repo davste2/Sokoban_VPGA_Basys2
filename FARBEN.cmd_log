@@ -22,3 +22,23 @@ vhdtdtfi -lib work FARBEN.vhd -prj Sokoban_version1 -o FARBEN.spl -module FARBEN
 spl2sym -intstyle ise -family spartan3e FARBEN.spl C:/Users/David/Sokoban_version1/FARBEN.sym 
 vhdtdtfi -lib work FARBEN.vhd -prj Sokoban_version1 -o FARBEN.spl -module FARBEN -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
 spl2sym -intstyle ise -family spartan3e FARBEN.spl C:/Users/David/Sokoban_version1/FARBEN.sym 
+vhdtdtfi -prj Sokoban_version1 -o C:/Users/David/Sokoban_version1/FARBEN.vhi -module FARBEN -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mytypes.vhd -lib work FARBEN.vhd 
+vhdtdtfi -lib work mytypes.vhd -lib work FARBEN.vhd -prj Sokoban_version1 -o FARBEN.spl -module FARBEN -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work mytypes.vhd -lib work FARBEN.vhd -prj Sokoban_version1 -o FARBEN.spl -module FARBEN -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work mytypes.vhd -lib work FARBEN.vhd -prj Sokoban_version1 -o FARBEN.spl -module FARBEN -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work mytypes.vhd -lib work FARBEN.vhd -prj Sokoban_version1 -o FARBEN.spl -module FARBEN -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -prj Sokoban_version1 -o C:/Users/David/Sokoban_version1/FARBEN.vhi -module FARBEN -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mytypes.vhd -lib work FARBEN.vhd 
+vhdtdtfi -prj Sokoban_version1 -o C:/Users/David/Sokoban_version1/FARBEN.vhi -module FARBEN -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mytypes.vhd -lib work FARBEN.vhd 
+vhdtdtfi -lib work mytypes.vhd -lib work FARBEN.vhd -prj Sokoban_version1 -o FARBEN.spl -module FARBEN -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work mytypes.vhd -lib work FARBEN.vhd -prj Sokoban_version1 -o FARBEN.spl -module FARBEN -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work mytypes.vhd -lib work FARBEN.vhd -prj Sokoban_version1 -o FARBEN.spl -module FARBEN -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work mytypes.vhd -lib work FARBEN.vhd -prj Sokoban_version1 -o FARBEN.spl -module FARBEN -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w FARBEN.spl C:/Users/David/Sokoban_version1/FARBEN.sym 
+vhdtdtfi -lib work mytypes.vhd -lib work FARBEN.vhd -prj Sokoban_version1 -o FARBEN.spl -module FARBEN -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work mytypes.vhd -lib work FARBEN.vhd -prj Sokoban_version1 -o FARBEN.spl -module FARBEN -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work mytypes.vhd -lib work FARBEN.vhd -prj Sokoban_version1 -o FARBEN.spl -module FARBEN -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w FARBEN.spl C:/Users/David/Sokoban_version1/FARBEN.sym 
+vhdtdtfi -lib work mytypes.vhd -lib work FARBEN.vhd -prj Sokoban_version1 -o FARBEN.spl -module FARBEN -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w FARBEN.spl C:/Users/David/Sokoban_version1/FARBEN.sym 
+vhdtdtfi -lib work mytypes.vhd -lib work FARBEN.vhd -prj Sokoban_version1 -o FARBEN.spl -module FARBEN -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w FARBEN.spl C:/Users/David/Sokoban_version1/FARBEN.sym 

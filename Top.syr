@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.42 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.42 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: Top.prj
 
@@ -104,37 +104,34 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
+Compiling vhdl file "C:/Users/David/Sokoban_version1/mytypes.vhd" in Library work.
+Architecture mytypes of Entity mytypes is up to date.
 Compiling vhdl file "C:/Users/David/Sokoban_version1/Eingabe.vhd" in Library work.
-Entity <Eingabe> compiled.
-Entity <Eingabe> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity eingabe is up to date.
 Compiling vhdl file "C:/Users/David/Sokoban_version1/FARBEN.vhd" in Library work.
-Entity <FARBEN> compiled.
-Entity <FARBEN> (Architecture <Behavioral>) compiled.
+Entity <farben> compiled.
+Entity <farben> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/David/Sokoban_version1/farb_tackt.vhd" in Library work.
-Entity <farb_tackt> compiled.
-Entity <farb_tackt> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity farb_tackt is up to date.
 Compiling vhdl file "C:/Users/David/Sokoban_version1/Taktteiler.vhd" in Library work.
-Entity <Taktteiler> compiled.
-Entity <Taktteiler> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity taktteiler is up to date.
 Compiling vhdl file "C:/Users/David/Sokoban_version1/VGA_SYNC.vhd" in Library work.
-Entity <VGA_SYNC> compiled.
-Entity <VGA_SYNC> (Architecture <arch>) compiled.
+Architecture arch of Entity vga_sync is up to date.
 Compiling vhdl file "C:/Users/David/Sokoban_version1/Top.vhf" in Library work.
-Entity <Top> compiled.
-Entity <Top> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity top is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <Top> in library <work> (architecture <BEHAVIORAL>).
+Analyzing hierarchy for entity <Top> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <Eingabe> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <Eingabe> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <FARBEN> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <FARBEN> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <farb_tackt> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <farb_tackt> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <Taktteiler> in library <work> (architecture <Behavioral>) with generics.
+Analyzing hierarchy for entity <Taktteiler> in library <work> (architecture <behavioral>) with generics.
 	Teiler = 149
 
 Analyzing hierarchy for entity <VGA_SYNC> in library <work> (architecture <arch>).
@@ -143,19 +140,19 @@ Analyzing hierarchy for entity <VGA_SYNC> in library <work> (architecture <arch>
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <Top> in library <work> (Architecture <BEHAVIORAL>).
+Analyzing Entity <Top> in library <work> (Architecture <behavioral>).
 Entity <Top> analyzed. Unit <Top> generated.
 
-Analyzing Entity <Eingabe> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <Eingabe> in library <work> (Architecture <behavioral>).
 Entity <Eingabe> analyzed. Unit <Eingabe> generated.
 
-Analyzing Entity <FARBEN> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <FARBEN> in library <work> (Architecture <behavioral>).
 Entity <FARBEN> analyzed. Unit <FARBEN> generated.
 
-Analyzing Entity <farb_tackt> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <farb_tackt> in library <work> (Architecture <behavioral>).
 Entity <farb_tackt> analyzed. Unit <farb_tackt> generated.
 
-Analyzing generic Entity <Taktteiler> in library <work> (Architecture <Behavioral>).
+Analyzing generic Entity <Taktteiler> in library <work> (Architecture <behavioral>).
 	Teiler = 149
 Entity <Taktteiler> analyzed. Unit <Taktteiler> generated.
 
@@ -185,8 +182,70 @@ Unit <Eingabe> synthesized.
 
 Synthesizing Unit <FARBEN>.
     Related source file is "C:/Users/David/Sokoban_version1/FARBEN.vhd".
-WARNING:Xst:647 - Input <PIXEL_X> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <PIXEL_Y> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <buttons> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <Array_in$mux0024> of Case statement line 137 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <Array_in$mux0024> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <Array_in$mux0024>.
+    Using one-hot encoding for signal <Y_FELD>.
+    Using one-hot encoding for signal <X_FELD>.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0000> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0001> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0002> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0003> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0004> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0005> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0006> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0007> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0008> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0009> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0010> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0011> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0012> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0013> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0014> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0015> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0016> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0017> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0018> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0019> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0020> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0021> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0022> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0023> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0024> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0025> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0026> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0027> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0028> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0029> created at line 68.
+    Found 11-bit comparator less for signal <X_FELD$cmp_lt0030> created at line 68.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0000> created at line 104.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0001> created at line 104.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0002> created at line 104.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0003> created at line 104.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0004> created at line 104.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0005> created at line 104.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0006> created at line 104.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0007> created at line 104.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0008> created at line 104.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0009> created at line 104.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0010> created at line 104.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0011> created at line 104.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0012> created at line 104.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0013> created at line 104.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0014> created at line 104.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0015> created at line 104.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0016> created at line 104.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0017> created at line 104.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0018> created at line 104.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0019> created at line 104.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0020> created at line 104.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0021> created at line 104.
+    Found 11-bit comparator less for signal <Y_FELD$cmp_lt0022> created at line 104.
+    Summary:
+	inferred  54 Comparator(s).
 Unit <FARBEN> synthesized.
 
 
@@ -246,10 +305,11 @@ Macro Statistics
  1-bit register                                        : 15
  3-bit register                                        : 1
  8-bit register                                        : 1
-# Comparators                                          : 6
+# Comparators                                          : 60
  10-bit comparator greatequal                          : 2
  10-bit comparator less                                : 2
  10-bit comparator lessequal                           : 2
+ 11-bit comparator less                                : 54
 
 =========================================================================
 
@@ -269,10 +329,11 @@ Macro Statistics
  32-bit up counter                                     : 1
 # Registers                                            : 26
  Flip-Flops                                            : 26
-# Comparators                                          : 6
+# Comparators                                          : 60
  10-bit comparator greatequal                          : 2
  10-bit comparator less                                : 2
  10-bit comparator lessequal                           : 2
+ 11-bit comparator less                                : 54
 
 =========================================================================
 
@@ -284,13 +345,25 @@ Optimizing unit <Top> ...
 
 Optimizing unit <Eingabe> ...
 
+Optimizing unit <FARBEN> ...
+
 Optimizing unit <farb_tackt> ...
 
 Optimizing unit <VGA_SYNC> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 7.
+INFO:Xst:2261 - The FF/Latch <farb_tackt1/rgb_1> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <farb_tackt1/rgb_0> 
+Found area constraint ratio of 100 (+ 5) on block Top, actual ratio is 18.
+FlipFlop VGA_SYNC1/H_COUNT_REG_4 has been replicated 1 time(s)
+FlipFlop VGA_SYNC1/H_COUNT_REG_5 has been replicated 1 time(s)
+FlipFlop VGA_SYNC1/H_COUNT_REG_6 has been replicated 1 time(s)
+FlipFlop VGA_SYNC1/H_COUNT_REG_7 has been replicated 1 time(s)
+FlipFlop VGA_SYNC1/H_COUNT_REG_8 has been replicated 1 time(s)
+FlipFlop VGA_SYNC1/H_COUNT_REG_9 has been replicated 1 time(s)
+FlipFlop VGA_SYNC1/V_COUNT_REG_7 has been replicated 1 time(s)
+FlipFlop VGA_SYNC1/V_COUNT_REG_8 has been replicated 1 time(s)
+FlipFlop VGA_SYNC1/V_COUNT_REG_9 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -298,8 +371,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 78
- Flip-Flops                                            : 78
+# Registers                                            : 86
+ Flip-Flops                                            : 86
 
 =========================================================================
 
@@ -328,24 +401,27 @@ Design Statistics
 # IOs                              : 23
 
 Cell Usage :
-# BELS                             : 243
+# BELS                             : 508
 #      GND                         : 1
 #      INV                         : 14
 #      LUT1                        : 49
-#      LUT2                        : 23
-#      LUT2_L                      : 1
-#      LUT3                        : 10
-#      LUT3_D                      : 2
-#      LUT3_L                      : 2
-#      LUT4                        : 27
-#      LUT4_D                      : 4
+#      LUT2                        : 31
+#      LUT2_D                      : 3
+#      LUT2_L                      : 8
+#      LUT3                        : 32
+#      LUT3_D                      : 9
+#      LUT3_L                      : 19
+#      LUT4                        : 154
+#      LUT4_D                      : 35
+#      LUT4_L                      : 37
 #      MUXCY                       : 57
+#      MUXF5                       : 6
 #      VCC                         : 1
 #      XORCY                       : 52
-# FlipFlops/Latches                : 78
+# FlipFlops/Latches                : 86
 #      FDC                         : 3
-#      FDCE                        : 20
-#      FDE                         : 22
+#      FDCE                        : 29
+#      FDE                         : 21
 #      FDR                         : 32
 #      FDSE                        : 1
 # Clock Buffers                    : 1
@@ -360,9 +436,9 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-5 
 
- Number of Slices:                       65  out of    960     6%  
- Number of Slice Flip Flops:             78  out of   1920     4%  
- Number of 4 input LUTs:                132  out of   1920     6%  
+ Number of Slices:                      197  out of    960    20%  
+ Number of Slice Flip Flops:             86  out of   1920     4%  
+ Number of 4 input LUTs:                391  out of   1920    20%  
  Number of IOs:                          23
  Number of bonded IOBs:                  23  out of     83    27%  
  Number of GCLKs:                         1  out of     24     4%  
@@ -388,7 +464,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-mclk                               | BUFGP                  | 64    |
+mclk                               | BUFGP                  | 72    |
 Taktteiler1/led_int                | NONE(Eingabe1/clk_int) | 14    |
 -----------------------------------+------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -398,16 +474,16 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-Reset                              | IBUF                   | 23    |
+Reset                              | IBUF                   | 32    |
 -----------------------------------+------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 4.671ns (Maximum Frequency: 214.103MHz)
+   Minimum period: 11.173ns (Maximum Frequency: 89.498MHz)
    Minimum input arrival time before clock: 2.017ns
-   Maximum output required time after clock: 5.032ns
+   Maximum output required time after clock: 5.009ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -416,50 +492,56 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'mclk'
-  Clock period: 4.671ns (frequency: 214.103MHz)
-  Total number of paths / destination ports: 2103 / 125
+  Clock period: 11.173ns (frequency: 89.498MHz)
+  Total number of paths / destination ports: 35275 / 141
 -------------------------------------------------------------------------
-Delay:               4.671ns (Levels of Logic = 3)
-  Source:            VGA_SYNC1/H_COUNT_REG_0 (FF)
-  Destination:       VGA_SYNC1/V_COUNT_REG_9 (FF)
+Delay:               11.173ns (Levels of Logic = 9)
+  Source:            VGA_SYNC1/V_COUNT_REG_4 (FF)
+  Destination:       farb_tackt1/rgb_2 (FF)
   Source Clock:      mclk rising
   Destination Clock: mclk rising
 
-  Data Path: VGA_SYNC1/H_COUNT_REG_0 to VGA_SYNC1/V_COUNT_REG_9
+  Data Path: VGA_SYNC1/V_COUNT_REG_4 to farb_tackt1/rgb_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             2   0.514   0.532  VGA_SYNC1/H_COUNT_REG_0 (VGA_SYNC1/H_COUNT_REG_0)
-     LUT4:I0->O            1   0.612   0.387  VGA_SYNC1/H_END_cmp_eq00007 (VGA_SYNC1/H_END_cmp_eq00007)
-     LUT4_D:I2->LO         1   0.612   0.169  VGA_SYNC1/H_END_cmp_eq000024 (N18)
-     LUT2:I1->O           10   0.612   0.750  VGA_SYNC1/V_COUNT_REG_and00001 (VGA_SYNC1/V_COUNT_REG_and0000)
-     FDCE:CE                   0.483          VGA_SYNC1/V_COUNT_REG_0
+     FDCE:C->Q            18   0.514   0.911  VGA_SYNC1/V_COUNT_REG_4 (VGA_SYNC1/V_COUNT_REG_4)
+     LUT4_D:I3->O          5   0.612   0.568  Farben1/Y_FELD<0>1 (Farben1/Y_FELD<0>1)
+     LUT4:I2->O            7   0.612   0.605  Farben1/Y_FELD<0>21 (Farben1/Y_FELD<0>)
+     LUT4_D:I3->O         13   0.612   0.866  Farben1/Array_in_mux0024<0>531 (Farben1/N33)
+     LUT3_L:I2->LO         1   0.612   0.103  Farben1/Y_FELD<22>1_SW6 (N299)
+     LUT4:I3->O            2   0.612   0.449  Farben1/Array_in_mux0024<0>5168_SW0 (N197)
+     LUT4:I1->O            1   0.612   0.360  Farben1/Array_in_mux0024<0>51179 (Farben1/N8)
+     LUT4:I3->O            4   0.612   0.502  Farben1/Array_in_mux0024<5> (Farben1/Array_in_mux0024<5>)
+     LUT4_D:I3->O          3   0.612   0.520  Farben1/FARBE<1>8 (Farben1/FARBE<1>8)
+     LUT4:I1->O            1   0.612   0.000  Farben1/FARBE<2>1 (XLXN_31<2>)
+     FDE:D                     0.268          farb_tackt1/rgb_2
     ----------------------------------------
-    Total                      4.671ns (2.833ns logic, 1.838ns route)
-                                       (60.7% logic, 39.3% route)
+    Total                     11.173ns (6.290ns logic, 4.883ns route)
+                                       (56.3% logic, 43.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Taktteiler1/led_int'
-  Clock period: 3.993ns (frequency: 250.445MHz)
+  Clock period: 4.023ns (frequency: 248.540MHz)
   Total number of paths / destination ports: 81 / 20
 -------------------------------------------------------------------------
-Delay:               3.993ns (Levels of Logic = 2)
+Delay:               4.023ns (Levels of Logic = 2)
   Source:            Eingabe1/latch_int (FF)
-  Destination:       Eingabe1/data_in_5 (FF)
+  Destination:       Eingabe1/data_in_7 (FF)
   Source Clock:      Taktteiler1/led_int rising
   Destination Clock: Taktteiler1/led_int rising
 
-  Data Path: Eingabe1/latch_int to Eingabe1/data_in_5
+  Data Path: Eingabe1/latch_int to Eingabe1/data_in_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDSE:C->Q            12   0.514   0.847  Eingabe1/latch_int (Eingabe1/latch_int)
-     LUT3_D:I2->O          5   0.612   0.568  Eingabe1/button_mux0002<1>11 (Eingabe1/N11)
-     LUT4:I2->O            1   0.612   0.357  Eingabe1/data_in_6_not00011 (Eingabe1/data_in_6_not0001)
-     FDE:CE                    0.483          Eingabe1/data_in_6
+     LUT3:I2->O            6   0.612   0.599  Eingabe1/button_mux0002<1>11 (Eingabe1/N11)
+     LUT4:I2->O            1   0.612   0.357  Eingabe1/data_in_7_not00011 (Eingabe1/data_in_7_not0001)
+     FDE:CE                    0.483          Eingabe1/data_in_7
     ----------------------------------------
-    Total                      3.993ns (2.221ns logic, 1.772ns route)
-                                       (55.6% logic, 44.4% route)
+    Total                      4.023ns (2.221ns logic, 1.802ns route)
+                                       (55.2% logic, 44.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Taktteiler1/led_int'
@@ -484,7 +566,7 @@ Offset:              2.017ns (Levels of Logic = 1)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Taktteiler1/led_int'
   Total number of paths / destination ports: 10 / 10
 -------------------------------------------------------------------------
-Offset:              5.032ns (Levels of Logic = 2)
+Offset:              5.009ns (Levels of Logic = 2)
   Source:            Eingabe1/data_in_7 (FF)
   Destination:       buttons<7> (PAD)
   Source Clock:      Taktteiler1/led_int rising
@@ -493,43 +575,43 @@ Offset:              5.032ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              2   0.514   0.380  Eingabe1/data_in_7 (Eingabe1/data_in_7)
+     FDE:C->Q              1   0.514   0.357  Eingabe1/data_in_7 (Eingabe1/data_in_7)
      INV:I->O              1   0.612   0.357  Eingabe1/leds<7>1_INV_0 (XLXN_33<7>)
      OBUF:I->O                 3.169          buttons_7_OBUF (buttons<7>)
     ----------------------------------------
-    Total                      5.032ns (4.295ns logic, 0.737ns route)
-                                       (85.4% logic, 14.6% route)
+    Total                      5.009ns (4.295ns logic, 0.714ns route)
+                                       (85.7% logic, 14.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'mclk'
   Total number of paths / destination ports: 10 / 10
 -------------------------------------------------------------------------
-Offset:              4.040ns (Levels of Logic = 1)
-  Source:            VGA_SYNC1/V_SYNC_REG (FF)
-  Destination:       VSYNC (PAD)
+Offset:              4.063ns (Levels of Logic = 1)
+  Source:            farb_tackt1/rgb_1 (FF)
+  Destination:       RGB<1> (PAD)
   Source Clock:      mclk rising
 
-  Data Path: VGA_SYNC1/V_SYNC_REG to VSYNC
+  Data Path: farb_tackt1/rgb_1 to RGB<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              1   0.514   0.357  VGA_SYNC1/V_SYNC_REG (VGA_SYNC1/V_SYNC_REG)
-     OBUF:I->O                 3.169          VSYNC_OBUF (VSYNC)
+     FDE:C->Q              2   0.514   0.380  farb_tackt1/rgb_1 (farb_tackt1/rgb_1)
+     OBUF:I->O                 3.169          RGB_0_OBUF (RGB<0>)
     ----------------------------------------
-    Total                      4.040ns (3.683ns logic, 0.357ns route)
-                                       (91.2% logic, 8.8% route)
+    Total                      4.063ns (3.683ns logic, 0.380ns route)
+                                       (90.6% logic, 9.4% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.95 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.01 secs
  
 --> 
 
-Total memory usage is 307192 kilobytes
+Total memory usage is 323476 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
 

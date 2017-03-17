@@ -1,0 +1,8 @@
+[Inputs]
+VIDEO_ON
+=buttons[7:0]=
+=PIXEL_X[9:0]=
+=PIXEL_Y[9:0]=
+[Outputs]
+=FARBE[7:0]=
+[BiDir]

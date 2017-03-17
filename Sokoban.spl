@@ -1,0 +1,5 @@
+[Inputs]
+=buttons[7:0]=
+[Outputs]
+=field[1:0]=
+[BiDir]

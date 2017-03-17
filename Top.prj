@@ -1,3 +1,4 @@
+vhdl work "mytypes.vhd"
 vhdl work "VGA_SYNC.vhd"
 vhdl work "Taktteiler.vhd"
 vhdl work "farb_tackt.vhd"

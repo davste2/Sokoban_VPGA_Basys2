@@ -6,12 +6,12 @@
 -- /___/  \  /    Vendor: Xilinx 
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
---  /   /         Filename : Top.vhf
--- /___/   /\     Timestamp : 03/17/2017 00:01:54
+--  /   /         Filename : Top_drc.vhf
+-- /___/   /\     Timestamp : 03/16/2017 23:12:27
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/David/Sokoban_version1/Top.vhf -w C:/Users/David/Sokoban_version1/Top.sch
+--Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan3e -flat -suppress -vhdl Top_drc.vhf -w C:/Users/David/Sokoban_version1/Top.sch
 --Design Name: Top
 --Device: spartan3e
 --Purpose:
@@ -44,7 +44,6 @@ architecture BEHAVIORAL of Top is
    signal XLXN_26  : std_logic;
    signal XLXN_31  : std_logic_vector (7 downto 0);
    signal XLXN_32  : std_logic;
-   signal XLXN_33  : std_logic_vector (7 downto 0);
    component Eingabe
       port ( readclk : in    std_logic; 
              Data    : in    std_logic; 
@@ -58,8 +57,7 @@ architecture BEHAVIORAL of Top is
       port ( VIDEO_ON : in    std_logic; 
              PIXEL_X  : in    std_logic_vector (9 downto 0); 
              PIXEL_Y  : in    std_logic_vector (9 downto 0); 
-             FARBE    : out   std_logic_vector (7 downto 0); 
-             buttons  : in    std_logic_vector (7 downto 0));
+             FARBE    : out   std_logic_vector (7 downto 0));
    end component;
    
    component farb_tackt
@@ -89,14 +87,13 @@ begin
    Eingabe1 : Eingabe
       port map (Data=>Data,
                 readclk=>XLXN_7,
-                buttons(7 downto 0)=>XLXN_33(7 downto 0),
+                buttons=>open,
                 Clk=>Clk_cont,
                 Latch=>Latch,
                 leds(7 downto 0)=>buttons(7 downto 0));
    
    Farben1 : FARBEN
-      port map (buttons(7 downto 0)=>XLXN_33(7 downto 0),
-                PIXEL_X(9 downto 0)=>XLXN_25(9 downto 0),
+      port map (PIXEL_X(9 downto 0)=>XLXN_25(9 downto 0),
                 PIXEL_Y(9 downto 0)=>XLXN_24(9 downto 0),
                 VIDEO_ON=>XLXN_26,
                 FARBE(7 downto 0)=>XLXN_31(7 downto 0));
